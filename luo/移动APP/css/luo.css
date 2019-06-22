@@ -1,0 +1,65 @@
+* {margin: 0px;padding: 0px;}
+body {
+	background: #fe434e;
+}
+.mui-input-group:after {
+	height: 0px;
+}
+.mui-input-group:before {
+	height: 0px;
+}
+.mui-bar-nav {
+	box-shadow: none;
+}
+
+
+.mui-content {
+	background: #fe434e;
+}
+.mui-content img {
+	margin: 40px 0px 30px 140px;
+	box-shadow: 0px 0px 45px #fff;
+}
+.mui-content p {
+	font-size: 20px;
+	color: #fff;
+}
+.mui-content .mui-input-group {
+	margin-top: 50px;
+	background: #fe434e;
+}
+.mui-content .mui-input-group .mui-input {
+	margin: 17px 0px 0px 45px;
+	width: 300px;
+	height: 30px;
+	border-radius: 30px;
+	border: 1px solid #fff;
+}
+.mui-content .mui-input-group .mui-input span {
+	margin: 0 0 0 10px;
+	color: #fff;
+}
+.mui-content .mui-input-group .mui-input label {
+	color: #fff;
+}
+.mui-content .mui-input-group .mui-button {
+	margin: 10px 0px 0px 45px;
+	width: 300px;
+	height: 50px;
+	border-radius: 50px;
+	border: 1px solid #fff;
+	background: #fff;
+}
+.mui-content .mui-input-group .mui-button p {
+	color: black;
+	margin-top: 12px;
+}
+.mui-content .mui-input-group .mui-p{
+	margin: 17px 0px 0px 45px;
+	width: 300px;
+	height: 30px;
+}
+.mui-content .mui-input-group .mui-p p{
+	font-size:18px;
+	font-weight:bold;
+}
