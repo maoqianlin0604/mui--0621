@@ -1,0 +1,99 @@
+*{
+	margin:0;padding:0;
+}
+#tabbar .mui-content{
+	margin:2px 0 0 0px;
+}
+#tabbar .mui-content .mui-row{
+	margin:12px auto;
+}
+#tabbar .mui-content .mui-row img{
+	width:120px;
+	height:20px;
+	margin:0 0 0 10px;
+}
+
+#tabbar .mui-content .mui-row .three{
+	font-size:14px;
+	margin:0 0 0 20px;
+	color:#a4acb2;
+}
+#tabbar .mui-content .mui-table-view{
+	padding: 0 0 0 0;
+}
+#tabbar .mui-content .mui-table-view-cell,#tabbar-with-chat .mui-content .mui-table-view-cell{
+	border-right:1px solid #e0dede;
+	border-bottom:1px solid #e0dede ;
+	padding: 20px 0 0 0px;
+	margin-right:0px;
+}
+#tabbar-with-chat .mui-content .mui-table-view-cell img{
+	width:40px;
+	height:40px;
+}
+#tabbar-with-chat .mui-content .mui-table-view-cell .mui-media-body{
+	font-weight:bold;
+}
+#tabbar .mui-table-view .mui-table-view-cell img{
+	width:40px;
+	height:40px;
+}
+#tabbar .mui-table-view .mui-table-view-cell div{
+	font-weight:bold;
+}
+
+
+#tabbar-with-contact .mui-card{
+	margin: 0px;
+	background:#ef5a16;
+}
+#tabbar-with-contact .mui-card .mui-card-content{
+	width:100px;
+	height:100px;
+	border-radius:50px;
+	background:#fff;
+	margin:20px 0px 35px 135px;
+}
+#tabbar-with-contact .mui-card .mui-card-content img{
+	width:100%;
+	height:100%;
+	border-radius:50%;
+}
+#tabbar-with-contact .mui-card .mui-card-content .huiyuan{
+	width:80px;
+	height:30px;
+	border-radius:10px;
+	background:#f4a64d;
+	margin:-20px 0px 0px 100px;
+}
+#tabbar-with-contact .mui-card .mui-card-content .huiyuan p{
+	line-height:30px;
+	text-align:center;
+}
+#tabbar-with-contact .mui-card .mui-card-footer{
+	
+}
+#tabbar-with-contact .mui-card .mui-card-footer .mui-col-xs-4{
+	margin-top:5px;
+}
+#tabbar-with-contact .mui-card .mui-card-footer .mui-col-xs-4 p{
+	line-height:8px;
+	text-align:center;
+	color:#fff;
+}
+#tabbar-with-contact .mui-table-view .mui-table-view-cell{
+	margin:-10px 0px 0px 0px
+}
+#tabbar-with-contact .mui-table-view .mui-table-view-cell img{
+	width:20px;
+	height:20px;
+	margin-bottom:-25px;
+}
+#tabbar-with-contact .mui-table-view .mui-table-view-cell a{
+	margin-left:20px;
+	font-weight:bold;
+}
+
+
+
+
