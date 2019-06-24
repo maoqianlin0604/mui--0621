@@ -1,0 +1,119 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+span{
+	font-size: 20px;
+	/*color:#fff*/
+}
+
+#pic_content1 {
+	position: relative;
+}
+
+#pic_content1>p.text_two1 {
+	position: absolute;
+	top: 78%;
+	left: 18%;
+	font-size: 18px;
+	color: #fff;
+}
+
+#pic_content1>img {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 5%;
+	top: 74%;
+}
+p.text_two2{
+	font-size:14px;
+	color: #555;
+	letter-spacing: 2.5px;
+}
+.pic_wenzi{
+	width:150px;
+	height:200px;	
+}
+.pic_wenzi>img{
+	width:100%;
+	height:auto;
+	border-radius:10px; 
+}
+ul.number{	
+	list-style: none;
+	margin-top:10%;
+	color:#333;
+	font-size:12px;
+}
+ul.number>li{
+	width:10%;
+	float:left;
+	margin-left:25px;
+	
+}
+.hope{
+	margin:10px 0 0px -35px;
+}
+label.trip{
+	width:100px
+}
+.jianju{
+	margin-left:15px
+}
+button.bottom_cor{
+	width:50%;
+	margin-left:25%;
+	margin-top:10%;
+}
+span#text1{
+	position: absolute;
+	top:15%;
+	left:45%;
+}
+img#tupian{
+	width: 70px;
+	height:70px;
+	border-radius: 50%;
+	position: absolute;
+	top:35%;
+	left:42%
+}
+span#text2{
+    position: absolute;
+	top:70%;
+	left:20%
+}
+}
+span#text3{
+	font-size: 20px;
+}
+
+#bianji{
+	width:80px;
+	height:20px;
+	background: #B4BCC7;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 10%;
+	position: absolute;
+	bottom:7%;
+	right:7%;
+}
+p#text4{
+	color:#333;
+	margin-left:10px;
+	margin-top: 10px;
+	letter-spacing: 2px;
+	font-size: 18px;
+}
+a#xingli{
+	color:#F2D743;
+	}
+	
+#content_trip{
+	height:90px
+	}
+	
+	

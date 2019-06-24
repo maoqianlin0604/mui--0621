@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>首页</title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+
+		<link rel="stylesheet" type="text/css" href="css/icons-extra.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	    <script src="js/jquery.min.js">
+		</script>
+		<script type="text/javascript">
+			mui.init();
+			$(function() {
+				var a = $(".tab_btn");
+				var b = $(".tab_content");
+				var gallery = mui('.mui-slider');
+//								var gallery = mui('.mui-slider');
+//								gallery.slider({
+//									interval:5000 //自动轮播周期，若为0则不自动播放，默认为0；
+//								});
+				$.each(a, function(index, value) {
+					$(this).on('tap', function() {
+						gallery.slider().gotoItem(index);
+					});
+
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<!--整体内容-->
+		<nav class="mui-bar mui-bar-tab">
+			<a id="defaultTab" class="mui-tab-item mui-active tab_btn" href="tab-webview-subpage-about.html">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item tab_btn" href="tab-webview-subpage-chat.html">
+				<span class="mui-icon mui-icon-upload"></span>
+				<span class="mui-tab-label">旅游</span>
+			</a>
+			<a class="mui-tab-item tab_btn" href="tab-webview-subpage-contact.html">
+				<span class="mui-icon mui-icon-chat"></span>
+				<span class="mui-tab-label">聊天</span>
+			</a>
+			<a class="mui-tab-item tab_btn" href="tab-webview-subpage-setting.html">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">主页</span>
+			</a>
+		</nav>
+		<div class="mui-content" style="height: ;">
+			<div id="slider" class="mui-slider mui-fullscreen">
+				<div class="mui-slider-group">
+					<!--首页-->
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active tab_content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<!--头部-->
+								<div class="mui-card " style="margin:0px">
+									<!--内容区-->
+									<div class="mui-card-content">
+										<div class="mui-card-header mui-card-media" style="height:210px;background-image:url(images/1.jpg);">
+										</div>
+										<a><span class="mui-icon-extra mui-icon-extra-sweep " style="color:#fff; position:absolute; top:15%;left: 85%;"></span></a>
+										<div class="mui-input-row mui-search" style="width:65%;  position:absolute;top:70%;left:20%">
+											<input type="search" class="mui-input-clear" placeholder="搜索目的地/向导号" style="background: #fff; border-radius:15px">
+										</div>
+									</div>
+									<!--底部-->
+									<div class="mui-card-content-inner" style="color: black;">
+										<div class="mui-pull-left" style="width:16px;height:16px; background-color: #F1CD00; margin-top:2px; margin-right:10px">
+										</div>
+										<p class="mui-pull-left">推荐主题&nbsp;&nbsp;|</p>
+										<p class="mui-pull-left">&nbsp;&nbsp;THEME</p>
+									</div>
+								</div>
+								<!--<图片内容1>-->
+								<div class="mui-card " id="pic_content1">
+
+									<div class="mui-card-header mui-card-media" style="height:200px;background-image:url(images/2.jpg);border-radius:3%">
+										<h3 style="font-size: 18px;"> 迷人的兰州</h3>
+										<span style="font-size:14px">2018.01.01</span>
+										<p style="position: absolute;right:6%;top:80%; color:#fff">2200</p>
+										<a><span class="mui-icon-extra mui-icon-extra-heart " style="color:#F1CD00;position: absolute;right:16%;top:80% "></span></a>
+									</div>
+									<img src="images/3.jpg" />
+									<p class="text_two1">飞奔的蜗牛</p>
+										
+								</div>
+									<div class="mui-card " id="pic_content1">
+
+									<div class="mui-card-header mui-card-media" style="height:200px;background-image:url(images/2.jpg);border-radius:3%">
+										<h3 style="font-size: 18px;"> 迷人的兰州</h3>
+										<span style="font-size:14px">2018.01.01</span>
+										<p style="position: absolute;right:6%;top:80%; color:#fff">2200</p>
+										<a><span class="mui-icon-extra mui-icon-extra-heart " style="color:#F1CD00;position: absolute;right:16%;top:80% "></span></a>
+									</div>
+									<img src="images/3.jpg" />
+									<p class="text_two1">飞奔的蜗牛</p>
+										
+								</div>
+								<!--攻略路线-->
+								<div class="mui-card " style="margin:0px">
+									<div class="mui-card-content-inner" style="color: black;">
+										<div class="mui-pull-left" style="width:16px;height:16px; background-color: #F1CD00; margin-top:2px; margin-right:10px">
+										</div>
+										<p class="mui-pull-left">攻略路线&nbsp;&nbsp;|</p>
+										<p class="mui-pull-left">&nbsp;&nbsp;RAIDERS</p>
+									</div>
+								</div>
+								<!--图文内容1-->
+								<div class="mui-card" style="margin:1px 0px;">
+									<div class="mui-card-content " style="margin-top:10px">
+										<div class="mui-card-content-inner">
+											<div class="mui-pull-right pic_wenzi">
+												<img src="images/2.jpg" / style="">
+											</div>
+											<p class="" style="color:black;font-size:22px; ;">他们被称为"台湾的万青",不到20岁她..</p>
+											<p class="text_two2">抓住一个地区的时候，这和涅槃时候同样珍貴</p>
+
+										</div>
+										<ul class="number" style="width：">
+											<li>
+												<span class="mui-icon-extra mui-icon-extra-like" style="color: ###;">
+						     		</span> 2.9萬
+											</li>
+											<li>
+												<a><span class="mui-icon-extra mui-icon-extra-like" style="color: ###;">
+						     		</span></a>
+												1200</li>
+											<li>
+												<span class="mui-icon-extra mui-icon-extra-heart " style="color:#555; "></span> 2200
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!--图文内容2-->
+								<div class="mui-card" style="margin:1px 0px;">
+									<div class="mui-card-content " style="margin-top:10px">
+										<div class="mui-card-content-inner">
+											<div class="mui-pull-right pic_wenzi">
+												<img src="images/2.jpg" / style="">
+											</div>
+											<p class="" style="color:black;font-size:22px; ;">他们被称为"台湾的万青",不到20岁她..</p>
+											<p class="text_two2">抓住一个地区的时候，这和涅槃时候同样珍貴</p>
+
+										</div>
+										<ul class="number">
+											<li>
+												<span class="mui-icon-extra mui-icon-extra-like" style="color: ###;">
+						     		</span> 2.9萬
+											</li>
+											<li>
+												<a><span class="mui-icon-extra mui-icon-extra-like" style="color: ###;">
+						     		</span></a>
+												1200</li>
+											<li>
+												<span class="mui-icon-extra mui-icon-extra-heart " style="color:#555; "></span> 2200
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--基础信息-->
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active tab_content" style="background: #fff;">
+					
+					<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<!--头部基础信息-->
+								<div class="mui-card " style="margin:0px">
+									<div class="mui-card-content-inner">
+										<p style="text-align: center; color:#222222;font-size: 15px;">基础信息</p>
+									</div>
+								</div>
+								<!--出发城市-->
+
+								<form class="">
+									<div class="mui-input-row" style="margin-top:20px ;height:70px">
+										<label class="trip">前往城市</label>
+										<input type="text" placeholder="城市" style="border:1px solid #333; width:40%;position: absolute;left:25%;top:0px;">
+									</div>
+									<div class="mui-input-row" style=" height:70px">
+										<label class="trip" style="text-align: center;">时间</label>
+										<input type="text" class="mui-input-clear " placeholder="出发时间" style="border:1px solid #333; width:40%;position: absolute;left:25%;top:0px;">
+									</div>
+									<div class="mui-input-row" style="height:70px;">
+										<label class="trip">同行人数</label>
+										<input type="text" class="mui-input-clear" placeholder="同行人数" style="border:1px solid #333; width:40%;position: absolute;left:25%;top:0px;">
+									</div>
+									<div class="mui-input-row" style="height:70px;">
+										<label class="trip" style="width:88px">旅行意愿</label>
+										<div class="hope">
+											<input class="jianju" type="checkbox" />人文
+											<input class="jianju" type="checkbox" />历史
+											<input class="jianju" type="checkbox" />自然
+										</div>
+									</div>
+									<div class="mui-input-row" style="height:70px;">
+										<label class="trip" style="text-align:center;">备注</label>
+										<input type="text" class="mui-input-clear" style="border:1px solid #333; width:70%;position: absolute;left:25%;top:0px; height:60px">
+									</div>
+								</form>
+								<button type="button" class="mui-btn mui-btn-warning  bottom_cor">下一步</button>
+
+							</div>
+						</div>
+					</div>
+					<!--聊天-->
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active tab_content" style="background: #fff;">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+                         	<div class="mui-card " style="margin:0px">
+									<div class="mui-card-content-inner">
+										<p style="text-align: center; color:#222222;font-size: 18px;">聊天</p>
+									</div>
+								</div>
+							<!--飞奔的蜗牛-->
+                            <div class="mui-card"style="margin: 1px 0px;">
+				           <div class="mui-card-header " style="height：150px">
+					       <!--<img src="images/3.jpg" / style="width:40px;height:40px;border-radius:20px">-->
+					       	<div class="" style="width:40px;height:40px;border-radius:20px;background: url(images/3.jpg);background-size: 100% 100%;">
+					       		
+					       	</div>
+					         <div class="mui-media-body" style="width:83%;font-size: 14px;margin-top:-15px">
+					         	<br />
+						飞奔的蜗牛
+						<p style="font-size: 10px;">您好！请问你在吗？我的订单可以取消吗？您好！请..</p>
+						
+					</div>
+					<p style="position:absolute;top:30%;left:85%;font-size: 12px;">昨天</p>
+					
+				</div>
+					</div>
+                            				<!--飞奔的蜗牛-->
+                            <div class="mui-card"style="margin:1px 0px">
+				           <div class="mui-card-header " style="height：150px">
+					         <!--<img id="" src="images/1.jpg" / style="width:40px;height:40px;border-radius:20px">-->
+					           	<div class="" style="width:40px;height:40px;border-radius:20px;background: url(images/3.jpg);background-size: 100% 100%;">
+					       		
+					       	</div>
+					         <div class="mui-media-body" style="width:83%;font-size: 14px;margin-top:-15px">
+					         	<br />
+						飞奔的蜗牛
+						<p style="font-size: 10px;">您好！请问你在吗？我的订单可以取消吗？您好！请..</p>
+						
+					</div>
+					<p style="position:absolute;top:30%;left:80%;font-size: 12px;">2018.01.01</p>
+					
+				</div>
+					</div>
+                            
+                            
+							</div>
+						</div>
+					</div>
+					<!--主页-->
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active tab_content" style="background: #fff;">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+									<div class="mui-card " style="margin:0">
+									<!--内容区-->
+									<div class="mui-card-content">
+										<div class="mui-card-header mui-card-media" style="height:220px;background-image:url(images/4.jpg)">
+											<span id="text1">主页</span>
+											<img id="tupian" src="images/3.jpg"/>
+											<span id="text2">JS代码(www.jsdaima.com)</span>
+											<div id="bianji" >
+												<span id="text3" style="font-size: 14px;">
+													编辑资料
+												</span>									
+											</div>
+										</div>
+										 
+									
+													
+						</div>
+										
+						</div>
+						
+						    <div class="mui-card"style="margin:1px 0px">
+				           <div class="mui-card-header " id="content_trip">
+					   	   <a id="xingli"><span class="mui-icon mui-icon-upload"></span></a>
+					         <div class="mui-media-body" style="width:83%;font-size: 14px;">
+						
+					     	   <p id="text4"> 我的行程</p>
+						
+					</div>
+					<span class="mui-icon mui-icon-forward mui-pull-right"></span>
+					
+				</div>
+				       <div class="mui-card-header " id="content_trip">
+					   	   <a id="xingli"><span class="mui-icon-extra mui-icon-extra-order"></span></a>
+					         <div class="mui-media-body" style="width:83%;font-size: 14px;">
+						
+					     	   <p id="text4">优惠券</p>
+						
+					</div>
+					<span class="mui-icon mui-icon-forward mui-pull-right"></span>
+					
+				</div>
+					       <div class="mui-card-header " id="content_trip">
+					   	   <a id="xingli"><span class="mui-icon mui-icon-phone"></span></a>
+					         <div class="mui-media-body" style="width:83%;font-size: 14px;">
+						
+					     	   <p id="text4"> 联系客服</p>
+						
+					</div>
+					<span class="mui-icon mui-icon-forward mui-pull-right"></span>
+					
+				</div>
+					       <div class="mui-card-header " id="content_trip">
+					   	   <a id="xingli"><span class="mui-icon mui-icon-gear"></span></a>
+					         <div class="mui-media-body" style="width:83%;font-size: 14px;">
+					     	   <p id="text4"> 设置</p>
+						
+					</div>
+					<span class="mui-icon mui-icon-forward mui-pull-right"></span>
+					
+				</div>
+				
+					</div>
+						
+						
+						
+						
+						
+						
+						
+						
+						</div>
+										
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" charset="utf-8">
+		mui.init();
+		mui('.mui-scroll-wrapper').scroll({
+			deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+		});
+	</script>
+
+</html>
