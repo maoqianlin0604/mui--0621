@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<link rel="stylesheet" type="text/css" href="css/all.css"/>
+	
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<a class="mui-icon mui-icon-phone mui-pull-right"></a>
+			<h1 class="mui-title">首页</h1>
+		</header>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#tabbar">
+				 <span class="mui-icon mui-icon-home"></span>
+	             <span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-chat">
+				<span class="mui-icon mui-icon-bars"></span>
+	             <span class="mui-tab-label">简介</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-contact">
+				<span class="mui-icon mui-icon-list"></span>
+	            <span class="mui-tab-label">案例</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-map">
+				<span class="mui-icon mui-icon-person"></span>
+	            <span class="mui-tab-label">联系</span>
+			</a>
+		</nav>
+		<div class="mui-content">
+			 <!--第一个页面--> 
+			<div id="tabbar" class="mui-control-content mui-active" >
+				<div class="mui-scroll-wrapper" id="a">
+	            <div class="mui-scroll">
+	       	<!--轮播图-->
+		<div id="slider" class="mui-slider" >
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				 <div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/20190621100833.jpg" class="img">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/20190621100828.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/20190621100833.jpg">
+					</a>
+				</div>
+				
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/20190621100828.jpg">
+					</a>
+				</div>
+			</div>
+              <div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>	
+
+	<!--主体一：三行列表-->
+	 <div class="mui-table">
+		                <div class="mui-table-cell mui-col-xs-10">
+		                    <h4 class="mui-ellipsis">公司简介</h4>
+		                    <p class="word-01">js代码(www.jsdaima.com)是IT资源下载与IT技能学习平<br>台.js代码网收集整理了最新IT开发视频教程、网站模<br>板、网站源码、JS特效(插件)等，充分满足IT用户对不同<br>类型资源的下载需求。js代码网拒绝滥竽充数，我们只<br>提供精品资源....</p>
+		                    <p class="word-02"><button type="button" class="mui-btn mui-btn-outlined">MORE</button></p>
+		                </div>
+	 </div>
+	
+	<!--主体二：栅格系统-->
+     <div class="main">
+    <div class="mui-row">
+        <div class="mui-col-sm-12 mui-col-xs-12 main-title">
+                      产品案例
+        </div>
+    </div>
+    
+     <div class="mui-row">
+        <div class="mui-col-sm-6 mui-col-xs-6 main-title-01">
+           <img src="images/20190621100808.jpg"/>           
+        </div>
+       <div class="mui-col-sm-6 mui-col-xs-6 main-title-02">
+            <img src="images/20190621100823.jpg"/>                 
+       </div>
+    </div>
+     <div class="mui-row">
+        <div class="mui-col-sm-6 mui-col-xs-6 main-title-03">
+           <div class="word-04" style="text-align:center;color:#94867e;font-size:20px;margin-top:5px;margin-bottom:20px">肉包产品照</div>         
+        </div>
+       <div class="mui-col-sm-6 mui-col-xs-6 main-title-04">
+           <div class="word-04" style="text-align:center;color:#94867e;font-size:20px;margin-top:5px;margin-bottom:20px">馒头产品照</div>                 
+       </div>
+    </div>
+     
+   
+      <div class="mui-row">
+        <div class="mui-col-sm-6 mui-col-xs-6 main-title-01">
+           <img src="images/20190621100756.jpg"/>           
+        </div>
+       <div class="mui-col-sm-6 mui-col-xs-6 main-title-02">
+            <img src="images/20190621100816.jpg"/>                 
+       </div>
+    </div>
+     <div class="mui-row">
+        <div class="mui-col-sm-6 mui-col-xs-6 main-title-03">
+           <div class="word-04" style="text-align:center;color:#94867e;font-size:20px;margin-top:5px;margin-bottom:20px">枸杞产品照</div>         
+        </div>
+       <div class="mui-col-sm-6 mui-col-xs-6 main-title-04">
+           <div class="word-04" style="text-align:center;color:#94867e;font-size:20px;margin-top:5px;margin-bottom:20px">鸡蛋产品照</div>                 
+       </div>
+    </div>
+    
+    <div class="mui-row">
+        <div class="mui-col-sm-12 mui-col-xs-12 main-title-05">
+           <p class="word-05"><button type="button" class="mui-btn mui-btn-outlined">MORE</button></p>          
+        </div>
+    </div>
+	
+
+ </div>
+    
+				
+		    
+		    </div>
+			</div>
+            </div>
+			<!--第二个页面-->
+			<div id="tabbar-with-chat" class="mui-control-content" >
+				<div class="mui-scroll-wrapper" id="b">
+	            <div class="mui-scroll">
+	            		<!--卡片视图-->	
+	<div class="mui-card">
+	<div class="mui-card-header">公司简介</div>
+	<div class="mui-card-content">
+		 <img src="images/20190622112017.jpg"/ style="width:100%;height:auto;"> 
+	</div>
+	<div class="mui-card-footer">
+	  <div class="word-06">艺影是一家由资深摄影人创办的专业摄影公司，业务范围包括：企业专题片、产品摄影、广告摄影、商业摄影、人像摄影、外景摄影、地产摄影等，同时，可根据客户需求提供设计、印刷及拍摄制作等延伸服务。</div>
+	</div>
+	
+	<div class="mui-card-footer">
+	 <div class="word-07">公司拥有200平大型高质量专业影棚；全套进口灯光设备；和国际顶级的摄影器械；包括骑士LX4X5大型技术座机，在中国幅相机哈苏503CW（6x6cm）全套镜头，丹麦飞思P30+高清数字后备（3100万像素），佳能2180万像素全画幅单反相机以及专业摄影灯光20多盏等，硬件实力领航同行.</div>
+	</div>
+	
+		<div class="mui-card-footer">
+	 <div class="word-08">sheying团队汇聚了来自摄影、美术、媒体、传播等领域的多名视觉精英，葆有最新鲜敏锐的光影敏感，习惯于深度透析客户需求，积极探索商业、摄影与设计的创造性结合，赋予作品强大的视觉能量。</div>
+	</div>
+	
+		<div class="mui-card-footer">
+	 <div class="word-09">作品收货口碑，实力赢得市场。sheying摄影已经在全国范围取得突破，摄影足迹远及北京、上海、四川、河北、陕西、山东、江西、湖北、江苏等省市，积累了丰富的商业摄影经验。为更好的服务异地客户，公司总部坐落于美丽的深圳南山(办公面积500平)龙岗分布面积260平方，分布在西安、山东、上海等地设立了分支机构，可就近帮客户完成拍摄，方便，快捷，最大限度帮助客户避免异地拍摄的成本浪费。</div>
+	</div>
+	
+		<div class="mui-card-footer">
+	 <div class="word-09">“用镜头为您创造更高的价值”是彬野摄影的追求与承诺.我们追求光影艺术与现代商业文化的高度结合，力求用镜头完美展现产品的内涵、气质与形象.我们期待，您的每一分钱都物超所值！</div>
+	</div>
+	
+</div>	
+	
+
+	     	
+		    </div>
+		    </div>
+		    </div>
+			<!--第三个页面-->
+			<div id="tabbar-with-contact" class="mui-control-content">
+				<div class="mui-scroll-wrapper" id="c">
+	            <div class="mui-scroll">
+						<!--栅格系统-->
+    <div class="main">
+    <div class="mui-row">
+        <div class="mui-col-sm-12 mui-col-xs-12 main-title-06">
+                      产品案例
+        </div>
+    </div>
+    
+     <div class="mui-row">
+        <div class="mui-col-sm-6 mui-col-xs-6 main-title-01">
+           <img src="images/20190621100808.jpg"/>           
+        </div>
+       <div class="mui-col-sm-6 mui-col-xs-6 main-title-02">
+            <img src="images/20190621100823.jpg"/>                 
+       </div>
+    </div>
+     <div class="mui-row">
+        <div class="mui-col-sm-6 mui-col-xs-6 main-title-03">
+           <div class="word-04" style="text-align:center;color:#94867e;font-size:20px;margin-top:5px;margin-bottom:20px">肉包产品照</div>         
+        </div>
+       <div class="mui-col-sm-6 mui-col-xs-6 main-title-04">
+           <div class="word-04" style="text-align:center;color:#94867e;font-size:20px;margin-top:5px;margin-bottom:20px">馒头产品照</div>                 
+       </div>
+    </div>
+     
+   
+      <div class="mui-row">
+        <div class="mui-col-sm-6 mui-col-xs-6 main-title-01">
+           <img src="images/20190621100756.jpg"/>           
+        </div>
+       <div class="mui-col-sm-6 mui-col-xs-6 main-title-02">
+            <img src="images/20190621100816.jpg"/>                 
+       </div>
+    </div>
+     <div class="mui-row">
+        <div class="mui-col-sm-6 mui-col-xs-6 main-title-03">
+           <div class="word-04" style="text-align:center;color:#94867e;font-size:20px;margin-top:5px;margin-bottom:20px">肉包产品照</div>         
+        </div>
+       <div class="mui-col-sm-6 mui-col-xs-6 main-title-04">
+           <div class="word-04" style="text-align:center;color:#94867e;font-size:20px;margin-top:5px;margin-bottom:20px">馒头产品照</div>                 
+       </div>
+    </div>
+    
+    
+         <div class="mui-row">
+        <div class="mui-col-sm-6 mui-col-xs-6 main-title-01">
+           <img src="images/20190621100749.jpg"/>           
+        </div>
+       <div class="mui-col-sm-6 mui-col-xs-6 main-title-02">
+            <img src="images/20190621100735.jpg"/>                 
+       </div>
+    </div>
+     <div class="mui-row">
+        <div class="mui-col-sm-6 mui-col-xs-6 main-title-03">
+           <div class="word-04" style="text-align:center;color:#94867e;font-size:20px;margin-top:5px;margin-bottom:20px">肉包产品照</div>         
+        </div>
+       <div class="mui-col-sm-6 mui-col-xs-6 main-title-04">
+           <div class="word-04" style="text-align:center;color:#94867e;font-size:20px;margin-top:5px;margin-bottom:20px">馒头产品照</div>                 
+       </div>
+    </div>
+    
+    <div class="mui-row">
+        <div class="mui-col-sm-12 mui-col-xs-12 main-title-05">
+           <p class="word-10">没有更多内容</p>          
+        </div>
+    </div>
+	
+ </div>
+        
+		    </div>
+		    </div>
+			</div>
+			<!--第四个页面-->
+			<div id="tabbar-with-map" class="mui-control-content">
+				<div class="mui-scroll-wrapper" id="d">
+	            <div class="mui-scroll">
+				<!--卡片视图-->	
+    <div class="mui-card">
+	<div class="mui-card-header">联系我们</div>
+	<div class="mui-card-content">
+		 <img src="images/20190622.jpg"/ style="width:100%;height:auto;margin-bottom:-7px"> 
+	</div>
+	</div>
+	
+	  <div class="mui-row">
+        <div class="mui-col-sm-2 mui-col-xs-2 main-title-03">
+           <div class="word-04" style="font-weight:bold;font-size:18px;margin-top:5px">地址：</div>         
+        </div>
+       <div class="mui-col-sm-10 mui-col-xs-10 main-title-04">
+           <div class="word-04" style="font-size:16px;margin-top:5px">福州市苍山区新华创意园2号</div>                 
+       </div>
+    </div>
+	
+	  <div class="mui-row">
+        <div class="mui-col-sm-2 mui-col-xs-2 main-title-03">
+           <div class="word-04" style="font-weight:bold;font-size:18px;margin-top:8px">电话：</div>         
+        </div>
+       <div class="mui-col-sm-10 mui-col-xs-10 main-title-04">
+           <div class="word-04" style="font-size:16px;margin-top:8px">183*****422</div>                 
+       </div>
+    </div>
+    
+      <div class="mui-row">
+        <div class="mui-col-sm-2 mui-col-xs-2 main-title-03">
+           <div class="word-04" style="font-weight:bold;font-size:18px;margin-top:8px">QQ：</div>         
+        </div>
+       <div class="mui-col-sm-10 mui-col-xs-10 main-title-04">
+           <div class="word-04" style="font-size:16px;margin-top:8px">158*****1</div>                 
+       </div>
+    </div>
+    
+      <div class="mui-row">
+        <div class="mui-col-sm-2 mui-col-xs-2 main-title-03">
+           <div class="word-04" style="font-weight:bold;font-size:18px;margin-top:8px">微信：</div>         
+        </div>
+       <div class="mui-col-sm-10 mui-col-xs-10 main-title-04">
+           <div class="word-04" style="font-size:16px;margin-top:8px">aaa*****05</div>                 
+       </div>
+    </div>
+    
+     <div class="mui-row">
+        <div class="mui-col-sm-12 mui-col-xs-12 main-title-07">
+           <div class="word-04"><img src="images/20190621100803.jpg" style="width:100%;height:auto;border-radius:20px;"/></div>         
+        </div>
+    
+		    </div>
+		    </div>
+			</div>
+		</div>
+		
+		
+		
+			
+		
+		
+	</body>
+	
+	<script src="js/mui.min.js"></script>
+	<script src="js/Zepto.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		//	   轮播图
+	   var gallery = mui('.mui-slider');
+       gallery.slider({
+      interval:2000//自动轮播周期，若为0则不自动播放，默认为0；
+      });
+		
+//		滑动区域方法1（原生js）
+//		var scroll_height=document.documentElement.clientHeight;
+//		
+//		document.getElementById("a").style.height=scroll_height+"px";
+//		document.getElementById("b").style.height=scroll_height+"px";
+//		document.getElementById("c").style.height=scroll_height+"px";
+//		document.getElementById("d").style.height=scroll_height+"px";
+//		
+
+//    滑动区域方法2（jQuery）
+    var screenHeight=document.documentElement.clientHeight;
+    
+    $(".mui-scroll-wrapper").css("height",screenHeight+"px").css("padding-top","0px");
+   
+ 
+		mui('.mui-scroll-wrapper').scroll({
+	deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+});
+
+	</script>
+</html>
